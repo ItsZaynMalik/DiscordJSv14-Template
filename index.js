@@ -51,6 +51,8 @@ process.env.UV_THREADPOOL_SIZE = OS.cpus().length;
     await require("./Database/connect")();
 })();
 
+// Global variables
+client.config = require('./config.json')
 
 //exporting client
 module.exports = client;
@@ -94,5 +96,5 @@ process.on('uncaughtException', err => {
 });
 
 // Logging in Discord
-client.login(process.env.token)
+client.login(client.config.token)
 .catch(e => console.log(`[DISCORD API] ${e}`.red))
