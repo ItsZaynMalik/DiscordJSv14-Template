@@ -2,11 +2,14 @@
 It is a simple template to get started with your Discord Bot with Discord.js Library
 
 ## Startup
-- Create a file named `.env`.
-- Enter the following details to it:
-```
-token="YOUR TOKEN"
-mongo="MONGO DB URI [Only required for commands which requires some data to store]"
+- There is file called config.json
+- Fill that file, that file will look like :
+```json
+{
+"token": "PutYourTokenHere",
+"mongo": "PutYourDBStringHere",
+"prefix": "!"
+}
 ```
 - Save the file. Open Terminal in the Project Directory.
 - Run:
@@ -15,10 +18,6 @@ npm i
 node index.js
 ```
 - You are done.
-
-## Configuration
-- To change your bot prefix, head to `./Events/Guild/messageCreate.js`.
-- At the top of the file, you can manage your prefix
 
 ## Support
 Join one of these Discord Servers, to get support:
