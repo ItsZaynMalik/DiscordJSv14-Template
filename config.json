@@ -1,4 +1,5 @@
 {
 "prefix": "!",
-"token": "YourBotToken"
+"token": "YourBotToken",
+"mongo": "YourMongoDBConnectionString"
 }
